@@ -1,0 +1,203 @@
+.annotation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.annotation-header {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.annotation-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.annotation-tools {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.annotation-tools select,
+.annotation-tools input[type="color"],
+.annotation-tools button {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  background: var(--panel);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+.annotation-tools button {
+  background: var(--danger-bg);
+  color: white;
+  border-color: var(--danger-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.annotation-tools button:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.annotation-workspace {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.canvas-container {
+  position: relative;
+}
+
+.annotation-canvas {
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  background: white;
+  cursor: crosshair;
+  width: min(100%, 900px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  max-height: 100%;
+  display: block;
+}
+
+.comment-input-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--panel);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  min-width: 300px;
+  backdrop-filter: blur(12px);
+}
+
+.comment-input-overlay h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text);
+}
+
+.comment-input-overlay textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+.comment-input-overlay textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.comment-input-overlay textarea::placeholder {
+  color: var(--muted);
+}
+
+.comment-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.comment-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.comment-actions button:first-child {
+  background: linear-gradient(135deg, var(--accent), #4cc9f0);
+  color: #000;
+}
+
+.comment-actions button:first-child:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(124, 124, 255, 0.3);
+}
+
+.comment-actions button:last-child {
+  background: var(--secondary-bg);
+  color: white;
+}
+
+.comment-actions button:last-child:hover {
+  background: #545b62;
+}
+
+.annotations-list {
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.annotations-list h4 {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.annotation-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.annotation-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.annotation-header-info .author {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.annotation-header-info .timestamp {
+  color: var(--muted);
+}
+
+.annotation-comment {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text);
+}

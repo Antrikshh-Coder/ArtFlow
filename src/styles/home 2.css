@@ -1,0 +1,210 @@
+/* ===== GLOBAL ===== */
+.home {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-left {
+  max-width: 550px;
+  animation: fadeUp 1s ease;
+}
+
+.hero-left h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-left h1 span {
+  color: #38bdf8;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* ===== BUTTONS ===== */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  background: #0ea5e9;
+}
+
+.btn.outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn.outline:hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+/* ===== TAGS ===== */
+.hero-tags {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-tags span {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.85rem;
+}
+
+/* ===== MOCKUP ===== */
+.hero-right {
+  animation: floatIn 1.2s ease;
+}
+
+.mockup {
+  width: 340px;
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+
+.mockup h4 {
+  margin-bottom: 14px;
+}
+
+.mockup ul {
+  list-style: none;
+}
+
+.mockup li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.section.dark {
+  background: #020617;
+}
+
+.section.highlight {
+  background: linear-gradient(180deg, #020617, #020617);
+}
+
+.section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+}
+
+.section p {
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  padding: 26px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== CTA ===== */
+.cta {
+  padding: 100px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+}
+
+.btn.large {
+  margin-top: 25px;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

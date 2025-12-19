@@ -1,0 +1,392 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  color: var(--text);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.welcome-section h1 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+  font-size: 2rem;
+}
+
+.welcome-section p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #4cc9f0);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 124, 255, 0.3);
+}
+
+.btn-secondary {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.stat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.dashboard-controls {
+  margin-bottom: 2rem;
+}
+
+.search-filter {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 400px;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--panel);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
+.filter-select {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--panel);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  border-color: var(--accent);
+}
+
+.project-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-header-info h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+.project-description {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.project-meta {
+  margin-bottom: 1rem;
+}
+
+.participants {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.participants span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.project-dates small {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.milestones-preview {
+  margin-bottom: 1rem;
+}
+
+.milestones-preview h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.milestone-progress {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.milestone-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #444;
+}
+
+.milestone-dot.pending {
+  background: var(--warning-bg);
+}
+
+.milestone-dot.in_progress {
+  background: var(--info-bg);
+}
+
+.milestone-dot.submitted {
+  background: #6f42c1;
+}
+
+.milestone-dot.approved {
+  background: var(--success-bg);
+}
+
+.milestone-dot.rejected {
+  background: var(--danger-bg);
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-actions .btn-primary,
+.project-actions .btn-secondary {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: var(--panel);
+  border-radius: 8px;
+  border: 2px dashed var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.empty-state h3 {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+}
+
+.empty-state p {
+  margin: 0 0 2rem 0;
+  color: var(--muted);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+}
+
+.modal h2 {
+  margin: 0 0 1.5rem 0;
+  color: var(--text);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group textarea::placeholder,
+.form-group input::placeholder {
+  color: var(--muted);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+  
+  .header-actions button {
+    flex: 1;
+  }
+  
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-filter {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    max-width: none;
+  }
+}
