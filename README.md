@@ -14,68 +14,77 @@
 🎯 **ArtFlow** is a **Digital Art Commissioning Platform** built using the **MERN Stack**.  
 It provides artists and clients with a **single, organized, real-time workspace** to collaborate, review, and deliver digital artwork professionally.
 
-> ✨ No more messy chats.  
-> ✨ No more unclear feedback.  
-> ✨ Just smooth collaboration.
+> 🎨 Create  
+> 💬 Collaborate  
+> 🚀 Deliver  
 
 ---
 
 ## ⚠️ The Problem
 
-Traditional art commissions depend on:
+Traditional art commissions rely on scattered tools like:
 
-📧 Emails  
-💬 Messaging Apps  
-📂 Shared Folders  
+📧 Emails &nbsp;&nbsp; 💬 Chats &nbsp;&nbsp; 📂 Shared folders  
 
-Which results in:
+This causes:
 
-❌ Scattered feedback  
+❌ Miscommunication  
 ❌ Lost revisions  
-❌ No revision history  
-❌ Confusing communication  
+❌ No visual feedback  
+❌ No project clarity  
 
 ---
 
 ## 💡 The ArtFlow Solution
 
-ArtFlow brings everything into **one creative space**:
+ArtFlow unifies the entire creative process into **one smart platform**:
 
-🖍 **Visual Feedback** – Draw and annotate directly on artwork  
-💬 **Live Chat** – Real-time communication  
-📌 **Milestones** – Clear approval stages  
-🧠 **Project Timeline** – Track every creative decision  
-
----
-
-## 🛠 Tech Stack
-
-| 🔧 Layer | 🚀 Technology |
-|-------|-------------|
-| 🎨 Frontend | React + Context API |
-| ⚙ Backend | Node.js, Express |
-| 🗄 Database | MongoDB |
-| 🔐 Authentication | JWT |
-| 🔄 Real-Time | Socket.IO |
+🖍 **Visual Feedback** – Annotate directly on artwork  
+💬 **Real-Time Chat** – Instant collaboration  
+📌 **Milestones** – Structured approvals  
+🧠 **Creative Timeline** – Track every decision  
 
 ---
 
-## ✨ Features
+## 🛠 Tech Stack & Languages Used
 
-✅ Register & Login system  
-✅ Project-based collaboration  
-✅ Visual annotations & feedback  
-✅ Real-time project chat  
-✅ Milestone-based workflow  
-✅ Secure artist-client access  
+<div align="center">
+
+### 🎨 Frontend  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### ⚙ Backend  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### 🗄 Database  
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### 🔐 Auth & Real-Time  
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens)
+![Socket.IO](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio)
+
+</div>
 
 ---
 
-## 🚧 Current Status
+## ✨ Key Features
+
+✔ Secure Authentication (Login / Register)  
+✔ Project-based collaboration  
+✔ Visual annotations on artwork  
+✔ Real-time project chat  
+✔ Milestone-based workflow  
+✔ Secure artist–client access  
+
+---
+
+## 🚧 Project Status
 
 🟢 Backend APIs connected to MongoDB  
-🟢 Authentication working  
-🟢 Modern responsive frontend  
+🟢 Authentication system working  
+🟢 Responsive frontend UI  
 🟡 Real-time collaboration features in progress  
 
 ---
@@ -83,23 +92,23 @@ ArtFlow brings everything into **one creative space**:
 ## 🔮 Future Enhancements
 
 🎨 Live drawing canvas  
-🖱 Real-time cursor tracking  
+🖱 Real-time cursor collaboration  
 📁 File version history  
-💳 Secure payment integration  
+💳 Payment integration  
 
 ---
 
 ## 🎯 Why ArtFlow?
 
-✨ Built for **artists**  
-✨ Designed for **clients**  
+✨ Built **for artists**  
+✨ Designed **for clients**  
 ✨ Focused on **clarity & creativity**  
 
 ---
 
 <div align="center">
 
-### 🌟 Built with passion, pixels, and creativity 🌟  
-🎨✨🚀
+### 🌟 Built with ❤️, creativity & code 🌟  
+🎨💻🚀
 
 </div>
